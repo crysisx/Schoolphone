@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    >
+    <LinearLayout
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+
+    	<FrameLayout
+    	    android:id="@android:id/tabcontent"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="0.0dip"
+    	    android:layout_weight="0.29" >
+
+    		<RelativeLayout
+    		    android:id="@+id/login_div"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="match_parent"
+    		    android:layout_margin="15dip"
+    		    android:background="@drawable/background_login_div_bg"
+    		    android:padding="15dip" >
+
+    		    <TextView
+    		        android:id="@+id/login_user_input"
+    		        style="@style/normalText"
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:layout_alignParentTop="true"
+    		        android:layout_centerHorizontal="true"
+    		        android:text="@string/jieshuo" />
+
+    		    <ScrollView
+    		        android:id="@+id/scrollView1"
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="100dp"
+    		        android:layout_below="@+id/TextView01"
+    		        android:background="@drawable/setbar_bg" >
+    		        
+    		         <TextView
+    		        android:id="@+id/TextView01"
+    		        style="@style/normalText"
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:layout_below="@id/login_user_input"
+    		        android:layout_centerHorizontal="true"
+    		        android:text="@string/hello" />
+    		        
+    		        
+    		        
+    		    </ScrollView>
+
+    		    <TextView
+    		        android:id="@+id/TextView01"
+    		        style="@style/normalText"
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:layout_below="@id/login_user_input"
+    		        android:layout_centerHorizontal="true"
+    		        android:text="@string/shou" />
+
+    		    <TextView
+    		        android:id="@+id/TextView02"
+    		        style="@style/normalText"
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:layout_alignLeft="@+id/TextView01"
+    		        android:layout_below="@+id/scrollView1"
+    		        android:text="@string/fasong" />
+
+    		    <ScrollView
+    		        android:id="@+id/ScrollView01"
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="100dp"
+    		        android:layout_alignLeft="@+id/scrollView1"
+    		        android:layout_below="@+id/TextView02"
+    		        android:background="@drawable/setbar_bg" >
+    		    </ScrollView>
+
+    		    <Button
+    		        android:id="@+id/signin_button"
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:layout_alignRight="@+id/login_user_input"
+    		        android:layout_below="@+id/ScrollView01"
+    		        android:background="@drawable/blue_button"
+    		        android:text="@string/huifu" />
+    		</RelativeLayout>
+
+    	</FrameLayout>
+
+    	<TabWidget 
+    		android:id="@android:id/tabs"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="0.0"
+    		android:visibility="gone"/>
+    </LinearLayout>
+</TabHost>
