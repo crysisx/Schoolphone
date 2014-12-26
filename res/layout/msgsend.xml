@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    >
+    <LinearLayout
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+
+    	<FrameLayout
+    	    android:id="@android:id/tabcontent"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="0.0dip"
+    	    android:layout_weight="0.29" >
+
+    		<RelativeLayout
+    		    android:id="@+id/login_div"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="match_parent"
+    		    android:layout_margin="15dip"
+    		    android:background="@drawable/background_login_div_bg"
+    		    android:padding="15dip" >
+
+    		    <EditText
+    		        android:id="@+id/username_edit"
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="wrap_content"
+    		        android:layout_below="@id/login_user_input"
+    		        android:hint="@string/login_username_hint"
+    		        android:inputType="text"
+    		        android:singleLine="true" >
+
+    		        <requestFocus />
+    		    </EditText>
+
+    		    <TextView
+    		        android:id="@+id/login_user_input"
+    		        style="@style/normalText"
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:layout_alignParentTop="true"
+    		        android:layout_centerHorizontal="true"
+    		        android:text="@string/xiaoxi" />
+
+    		    <ScrollView
+    		        android:id="@+id/scrollView1"
+    		        android:layout_width="fill_parent"
+    		        android:layout_height="200dp"
+    		        android:layout_alignLeft="@+id/username_edit"
+    		        android:layout_below="@+id/TextView01"
+    		        android:background="@drawable/setbar_bg" >
+    		    </ScrollView>
+
+    		    <TextView
+    		        android:id="@+id/TextView01"
+    		        style="@style/normalText"
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:layout_below="@+id/username_edit"
+    		        android:layout_centerHorizontal="true"
+    		        android:text="@string/xiaoxi2" />
+
+    		    <Button
+    		        android:id="@+id/signin_button"
+    		        android:layout_width="wrap_content"
+    		        android:layout_height="wrap_content"
+    		        android:layout_alignLeft="@+id/TextView01"
+    		        android:layout_below="@+id/scrollView1"
+    		        android:background="@drawable/blue_button"
+    		        android:text="@string/xiaoxi3" />
+
+    		</RelativeLayout>
+
+    	</FrameLayout>
+
+    	<TabWidget 
+    		android:id="@android:id/tabs"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="0.0"
+    		android:visibility="gone"/>
+    	<RadioGroup
+    		android:id="@+id/main_tab"
+    		android:background="@drawable/maintab_toolbar_bg"
+    		android:orientation="horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:gravity="center_vertical"
+    		android:layout_gravity="bottom">
+    		<RadioButton 
+    			android:layout_marginTop="2.0dip"
+    			android:text="@string/main_home"
+    			android:drawableTop="@drawable/icon_1_n"
+    			android:id="@+id/radio_button0"
+    			style="@style/main_tab_bottom"/>
+    		<RadioButton 
+    			android:layout_marginTop="2.0dip"
+    			android:text="@string/main_news"
+    			android:drawableTop="@drawable/icon_2_n"
+    			android:id="@+id/radio_button1"
+    			style="@style/main_tab_bottom"/>
+    		<RadioButton 
+    			android:layout_marginTop="2.0dip"
+    			android:text="@string/main_my_info"
+    			android:drawableTop="@drawable/icon_3_n"
+    			android:id="@+id/radio_button2"
+    			style="@style/main_tab_bottom"/>
+    		<RadioButton 
+    			android:layout_marginTop="2.0dip"
+    			android:text="@string/menu_search"
+    			android:drawableTop="@drawable/icon_4_n"
+    			android:id="@+id/radio_button3"
+    			style="@style/main_tab_bottom"/>
+    		<RadioButton 
+    			android:layout_marginTop="2.0dip"
+    			android:text="@string/more"
+    			android:drawableTop="@drawable/icon_5_n"
+    			android:id="@+id/radio_button4"
+    			style="@style/main_tab_bottom"/>
+    	</RadioGroup>
+    </LinearLayout>
+</TabHost>

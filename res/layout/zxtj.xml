@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div_bg"
+        android:padding="15dip" >
+
+        <TextView
+            android:id="@+id/login_user_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="推荐教室" 
+            android:textColor="#010101"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="217dp"
+        android:layout_margin="15dip"
+        android:layout_weight="0.52"
+        android:background="@drawable/background_login_div_bg"
+        android:padding="15dip" >
+
+        <TextView
+            android:id="@+id/spinnerText1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#010101" />
+
+        <TextView
+            android:id="@+id/spinnerText2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinnerText3"
+            android:layout_below="@+id/spinnerText1"
+            android:textColor="#010101" />
+
+        <TextView
+            android:id="@+id/spinnerText3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinnerText1"
+            android:layout_below="@+id/spinnerText2"
+            android:textColor="#010101" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="6教北334"
+            android:textColor="#010101" />
+
+         <TextView
+             android:id="@+id/TextView03"
+             style="@style/normalText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/spinnerText3"
+             android:layout_below="@+id/spinnerText3"
+             android:layout_marginTop="18dp"
+             android:text="关门时间晚上9点"
+             android:textColor="#010101" />
+
+         <TextView
+             android:id="@+id/TextView02"
+             style="@style/normalText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/spinnerText2"
+             android:layout_below="@+id/spinnerText2"
+             android:text="状态：空闲"
+             android:textColor="#010101" />
+
+    </RelativeLayout>
+
+</LinearLayout>
